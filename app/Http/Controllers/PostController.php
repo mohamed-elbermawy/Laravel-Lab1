@@ -48,4 +48,11 @@ class PostController extends Controller
             'post'=>$post            
         ]);
     }
+
+    public function update($post)
+    {
+        //logic for saving in db
+
+        return redirect()->route('posts.index');
+    }
 }
