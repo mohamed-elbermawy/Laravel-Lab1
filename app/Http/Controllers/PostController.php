@@ -38,4 +38,14 @@ class PostController extends Controller
 
         return redirect()->route('posts.index');
     }
+
+    public function edit($post)
+    {
+        //logic for saving in db
+        $post = ['id' => 1, 'title' => 'Laravel', 'description' => 'Show Post Description', 'posted_by' => 'Ahmed', 'created_at' => '2021-03-13'];
+
+        return view('posts.edit',[
+            'post'=>$post            
+        ]);
+    }
 }
