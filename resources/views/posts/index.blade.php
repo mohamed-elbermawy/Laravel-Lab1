@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="{{route('posts.create')}}" class="btn btn-success">Create Post</a>
-
-    <table class="table  mt-5 container">
+<div class="container">
+  <div class="mt-5">
+  <a href="{{route('posts.create')}}" class="btn btn-success auto">Create Post</a>
+  </div>
+    <table class="table  mt-2">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -29,5 +31,17 @@
           @endforeach
         </tbody>
       </table>
+
+      <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+</div>
 @endsection
     

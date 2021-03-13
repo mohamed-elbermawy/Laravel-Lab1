@@ -52,7 +52,8 @@ class PostController extends Controller
     public function update($post)
     {
         //logic for saving in db
-
+        // dd("skksks");
         return redirect()->route('posts.index');
+        // return view('posts.index');
     }
 }
